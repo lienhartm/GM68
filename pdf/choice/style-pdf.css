@@ -1,0 +1,93 @@
+main, body {
+  min-height: 800px;
+}
+.div-main {
+  text-align: center;
+  margin-top: 50px;
+}
+.div-import {
+  margin-top: 50px;
+}
+.checkbox-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*gap: 10px;*/
+}
+.checkbox-list label {
+  /*display: block;*/
+  text-align: left;
+}
+.preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.preview-card {
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+}
+.preview-card input {
+  margin-top: 10px;
+}
+.div-row {
+  text-align: left;
+  margin: -26px;
+}
+label {
+  display: inline-block;
+  width: 300px;
+}
+input {
+  margin: 20px;
+}
+.range {
+  top: 3px;
+  position: relative;
+}
+.color {
+  top: 1px;
+  position: relative;
+}
+.number {
+  position: relative;
+  top: 1px;
+}
+.checkbox {
+  position: relative;
+  top: 1px;
+}
+table, tr, td, th {
+  text-align:center;
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+th {
+  padding: 20px;
+  background-color: #F5F5F5;
+  color: #3b3a30;
+}
+#generate {
+  margin: 50px 0 50px 0;
+}
+.div-avert {
+    width: 650px;
+    margin: auto;
+    background-color: #FFFF66;
+    padding: 20px;
+    border-radius: 10px;
+}
+.div-avert >  span {
+    font-size:62px;
+    float:left;
+    margin-right: 50px;
+}
+
+.div-avert > p {
+    text-align: left;
+}

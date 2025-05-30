@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Étiquettes PDF à partir de Fichiers</title>
+
+  <script src="./xlsx.full.min.js.js"></script>
+  <script src="./jspdf.umd.min.js.js"></script>
+  <script src="./papaparse.min.js.js"></script>
+  
+  <script async src="./script-pdf.js"></script>
+  
+  <link href="style-pdf.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body>
+  <div class="div-main">
+    <h1>Créer des Étiquettes PDF</h1>
+    <div class="div-avert">
+      <span>⚠️</span>
+      <p>À partir de fichiers aux formats (*.csv, *.xlsx, *.xls, *.tsv), il convient de supprimer les colonnes et lignes vides ou fusionnées afin d'éviter les problèmes liés à l'importation, et de rafraîchir la page après chaque génération de document.</p>
+    </div>
+    <div class="div-import">
+      <input type="file" id="fileInput" accept=".csv,.xlsx,.xls,.tsv">
+      <button id="import">Importer le document</button>
+    </div>
+    <div id="columnSelection" style="margin-top: 50px; display: none;">
+      <h2>Sélectionnez et paramètrez les colonnes à afficher :</h2>
+      <div class="checkbox-list" id="checkboxContainer"></div>
+      <button id="generate">Générer le PDF</button>
+    </div>
+  </div>
+</body>
+</html>
+

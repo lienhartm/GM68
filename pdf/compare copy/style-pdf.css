@@ -1,0 +1,85 @@
+main, body {
+	min-height:800px;
+}
+.div-main {
+    text-align:center;
+    margin-top:100px;
+}
+.div-import {
+    margin-top:100px;
+}
+table {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-collapse: collapse;
+  margin:auto;
+  height:50px;
+}
+
+th {
+    background-color: #dddddd;
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-collapse: collapse;
+    height: 12px;
+}
+#result {
+    margin: auto;
+    text-align: left;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, white , #FEFEFE 5% 19%, #F7F7F7 23% 50% );
+    padding: 20px;
+}
+
+.logo a {
+    flex: 0 0 200px;
+    padding-right: 20px;
+}
+
+.logo a img {
+    width: 340px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.logo img#header {
+    flex: 1;
+    width: auto;
+    height: 205px;
+    object-fit: fill;
+}
+
+nav {
+    height:50px;
+  }
+  
+  nav ul {
+    display:inline-flex;
+    margin: 10px 0;
+  }
+  
+  nav li {
+    list-style-type:none;
+  }
+  
+  li a {
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: 1px;
+      padding-inline: 20px;
+      color: black;
+  }
+  
+  li a:hover {
+      border-bottom: 10px solid #F2F2F2;
+  }
