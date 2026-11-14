@@ -1,12 +1,12 @@
 # GM68
 
-## Contenus
+## Contenu du projet
 
-- Document contenant le [Devis](./images/CahierDesCharges.pdf)
-- Générateur de listes pour tests :
-  		- [Apple](./testListGenerator/testListGenerateur.command)
-  		- [Linux](./testListGenerator/testListGenerateur.sh)
-  		- [Windows](./testListGenerator/testListGenerateur.bat)
+Document contenant le [Devis](./images/CahierDesCharges.pdf)
+Générateur de listes pour tests :
+- [Apple](./testListGenerator/testListGenerateur.command)
+- [Linux](./testListGenerator/testListGenerateur.sh)
+- [Windows](./testListGenerator/testListGenerateur.bat)
 
 
 
