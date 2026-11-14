@@ -63,3 +63,9 @@ Cette section permet de générer automatiquement un fichier PDF prêt à imprim
 >	- Dimensions d'une carte : 8,5 cm de large × 5,4 cm de haut (format carte de visite standard).
 >	- Marges de la page : 1,2 cm en haut et en bas ; 2 cm à gauche et à droite.
 >	- Espacement entre les colonnes : 4,5 cm ? (Attention : sur le schéma page 5, la cote de 4,5 cm est indiquée sur la largeur de la deuxième colonne, ce qui semble être une erreur de cotation sur la maquette puisque 2 cm + 8,5 cm + 8,5 cm + 2 cm = 21 cm, soit la largeur exacte d'une feuille A4 sans espace central.)
+
+---
+
+<div align="center">
+  <sub>© 2026–2027 — Michael Lienhart | <a href="https://lienhartm.github.io/lm/">WebSite LM</a></sub>
+</div>
