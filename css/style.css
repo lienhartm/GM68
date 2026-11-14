@@ -1,0 +1,45 @@
+* { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+body { margin: 0; background: #fff; color: #222; }
+
+.top-bar {
+    display: flex; align-items: center; padding: 15px 25px;
+    border-bottom: 4px solid #8cc63f;
+}
+.logo { font-weight: bold; font-size: 1.3rem; color: #c8102e; width: 240px; }
+.top-bar h1 { font-size: 1.4rem; font-weight: 100; margin: 0; letter-spacing: 0.1em; }
+
+.main-container { display: flex; min-height: calc(100vh - 70px); }
+
+/* Menu latéral */
+.sidebar { width: 240px; padding: 20px 10px; display: flex; flex-direction: column; gap: 10px; }
+.nav-btn {
+    border: none; padding: 12px 15px; font-size: 1.1rem; text-align: left;
+    cursor: pointer; border-radius: 3px; transition: opacity 0.2s;
+}
+.btn-vert { background: #8cc63f; color: #c8102e; }
+.btn-rouge { background: #c8102e; color: #ffdd00; }
+.btn-jaune { background: #ffdd00; color: #c8102e; }
+.nav-btn.active { outline: 2px solid #000; font-weight: bold; }
+
+/* Contenu */
+.content { flex: 1; padding: 20px 30px; }
+.tab-section { display: none; }
+.tab-section.active { display: block; }
+
+.controls-row {
+    display: flex; gap: 20px; align-items: center;
+    padding-bottom: 15px; border-bottom: 2px solid #333; margin-bottom: 20px;
+}
+.action-btn {
+    background: #a6a6a6; border: none; padding: 8px 25px;
+    border-radius: 15px; font-size: 1rem; cursor: pointer;
+}
+.action-btn:hover { background: #8c8c8c; }
+
+/* Grille 3 colonnes du comparateur */
+.results-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 20px; }
+.copyable-zone { user-select: all; line-height: 1.5; }
+.col-anciens ul { list-style: none; padding: 0; font-weight: bold; line-height: 1.6; }
+
+/* Aperçu PDF */
+#pdf-preview { width: 100%; height: 650px; border: 1px solid #ccc; margin-top: 10px; }
