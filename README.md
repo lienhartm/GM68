@@ -4,9 +4,9 @@
 
 - [Devis](./images/CahierDesCharges.pdf)
 - Générateur de listes pour tests :
-  		- [Apple](./testListGenerator/testListGenerator.command)
-  		- [Linux](./testListGenerator/testListGenerator.sh)
-  		- [Windows](./testListGenerator/testListGenerator.bat)
+  		- [Apple](./testListGenerator/testListGenerateur.command)
+  		- [Linux](./testListGenerator/testListGenerateur.sh)
+  		- [Windows](./testListGenerator/testListGenerateur.bat)
 
 Ce document PDF de 5 pages présente la maquette fonctionnelle d'un outil web d'aide à l'administration et à la gestion conçu pour l'association Générations Mouvement.
 Voici l'analyse détaillée des fonctionnalités et de la structure du projet :
