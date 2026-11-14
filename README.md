@@ -1,10 +1,19 @@
 # GM68
 
-## Contenu du projet
+## Lancement de l'application
 
-Document contenant le [Devis](./images/CahierDesCharges.pdf)
+Aucune installation serveur n'est requise : toutes les données sont traitées localement dans le navigateur pour garantir la confidentialité des adhérents (RGPD).
 
-Générateur de listes pour tests :
+1. Cloner ou télécharger ce dépôt.
+2. Ouvrir simplement le fichier `index.html` dans un navigateur web moderne (Chrome, Firefox, Edge, Safari).
+
+## Format des fichiers importés
+
+L'application accepte les fichiers **Excel (`.xlsx`, `.xls`)**, **CSV (`.csv`)** et **TSV (`.tsv`)** contenant les colonnes suivantes :
+`ID du Contact`, `Nom`, `Prénom`, `Adresse`, `Code postal`, `Ville`, `Numéro club`, `Nom du club`, `Ville du club`, `Détail` *(ainsi que Téléphone / Email si présents)*.
+
+### Générateur de liste pour effectuer les tests :
+
 - [Apple](./testListGenerator/testListGenerateur.command)
 - [Linux](./testListGenerator/testListGenerateur.sh)
 - [Windows](./testListGenerator/testListGenerateur.bat)
@@ -12,6 +21,8 @@ Générateur de listes pour tests :
 
 
 ## Devis
+
+[ => Document disponible](./images/CahierDesCharges.pdf)
 
 Ce document PDF de 5 pages présente la maquette fonctionnelle d'un outil web d'aide à l'administration et à la gestion conçu pour l'association Générations Mouvement.
 
@@ -40,11 +51,13 @@ Cette section permet de générer automatiquement un fichier PDF prêt à imprim
 - Prévisualisation (Page 3) : L'interface intègre un lecteur PDF permettant de visualiser le rendu de la planche avant l'impression.
 
 - Mise en page d'une carte (Page 4) : L'outil vient remplir un modèle préexistant (« Carte adhérent 2025 n° » avec la mention Mutuaide assistance en bas). Il ajoute dynamiquement :
+  
 >	- Le numéro d'adhérent en haut à droite.
 >	- Le Prénom et NOM en gras au centre.
 >	- Le numéro de club + nom du club ainsi que la commune en dessous.
 
 - Gabarit d'impression (Page 5) : Cette page fournit les cotes exactes (en cm) pour le développement du générateur PDF (type jsPDF ou PDFKit côté client, ou FPDF/WeasyPrint côté serveur) sur une feuille A4 de 10 cartes (2 colonnes × 5 lignes) :
+  
 >	- Dimensions d'une carte : 8,5 cm de large × 5,4 cm de haut (format carte de visite standard).
 >	- Marges de la page : 1,2 cm en haut et en bas ; 2 cm à gauche et à droite.
-	• Espacement entre les colonnes : 4,5 cm ? (Attention : sur le schéma page 5, la cote de 4,5 cm est indiquée sur la largeur de la deuxième colonne, ce qui semble être une erreur de cotation sur la maquette puisque 2 cm + 8,5 cm + 8,5 cm + 2 cm = 21 cm, soit la largeur exacte d'une feuille A4 sans espace central.)
+>	- Espacement entre les colonnes : 4,5 cm ? (Attention : sur le schéma page 5, la cote de 4,5 cm est indiquée sur la largeur de la deuxième colonne, ce qui semble être une erreur de cotation sur la maquette puisque 2 cm + 8,5 cm + 8,5 cm + 2 cm = 21 cm, soit la largeur exacte d'une feuille A4 sans espace central.)
