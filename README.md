@@ -2,30 +2,34 @@
 
 ## Contenus
 
-- [Devis](./images/CahierDesCharges.pdf)
+- Document contenant le [Devis](./images/CahierDesCharges.pdf)
 - Générateur de listes pour tests :
   		- [Apple](./testListGenerator/testListGenerateur.command)
   		- [Linux](./testListGenerator/testListGenerateur.sh)
   		- [Windows](./testListGenerator/testListGenerateur.bat)
 
+
+
+## Devis
+
 Ce document PDF de 5 pages présente la maquette fonctionnelle d'un outil web d'aide à l'administration et à la gestion conçu pour l'association Générations Mouvement.
 Voici l'analyse détaillée des fonctionnalités et de la structure du projet :
 
-1. Architecture générale (Page 1)
+### 1. Architecture générale (Page 1)
 
 L'interface s'articule autour d'un menu latéral gauche composé de trois onglets principaux :
 • Comparateur des listes (en vert)
 • Impression de cartes (en rouge)
 • Mémo / Pratique (en jaune — écran non détaillé dans le PDF)
 
-2. Le comparateur de listes (Page 2)
+### 2. Le comparateur de listes (Page 2)
 
 Cet outil permet de croiser deux fichiers d'adhérents : la « Liste du club » et la « Liste 2 (SAGA) » (le logiciel de gestion de la fédération). Le résultat s'affiche en trois colonnes :
 • Nouveaux : Affiche les adhérents présents dans une liste mais absents de l'autre. Le cahier des charges précise que leurs coordonnées complètes (nom, adresse, téléphone, e-mail) doivent s'afficher ici afin de pouvoir les copier-coller facilement.
 • Anciens (2 colonnes) : Affiche uniquement les noms et prénoms des membres déjà connus dans chaque liste, servant uniquement de contrôle visuel rapide.
 • Note technique : Il y a une petite coquille typographique à corriger dans le titre de cette page (« Comprer des listes » au lieu de « Comparer des listes »).
 
-3. Le générateur de cartes d'adhérents (Pages 3, 4 et 5)
+### 3. Le générateur de cartes d'adhérents (Pages 3, 4 et 5)
 
 Cette section permet de générer automatiquement un fichier PDF prêt à imprimer à partir d'un fichier de données importé (Excel, CSV ou TSV).
 • Prévisualisation (Page 3) : L'interface intègre un lecteur PDF permettant de visualiser le rendu de la planche avant l'impression.
