@@ -1,5 +1,7 @@
 # GM68
 
+[Your site is live](https://lienhartm.github.io/GM68/)
+
 ## Lancement de l'application
 
 Aucune installation serveur n'est requise : toutes les données sont traitées localement dans le navigateur pour garantir la confidentialité des adhérents (RGPD).
