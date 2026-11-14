@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générations Mouvement - Outils de Gestion</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- CDN 1 : SheetJS pour lire Excel (.xlsx, .xls), CSV et TSV -->
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/shim.min.js"></script>
+    
+    <!-- CDN 2 : jsPDF pour générer le document PDF des cartes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+
+    <header class="top-bar">
+        
+        <div class="logo"><img src="./images/logo.png" alt="generation mouvement" width="" height="" /></div>
+        <h1>Outils d'aide à l'administration et à la Gestion</h1>
+    </header>
+
+    <div class="main-container">
+        <!-- Menu latéral (Page 1) -->
+        <nav class="sidebar">
+            <button class="nav-btn btn-vert active" data-target="section-comparateur">Comparateur des listes</button>
+            <button class="nav-btn btn-rouge" data-target="section-cartes">Impression de cartes</button>
+            <button class="nav-btn btn-jaune" data-target="section-memo">Mémo / Pratique</button>
+        </nav>
+
+        <!-- Zone de contenu dynamique -->
+        <main class="content">
+            
+            <!-- ONGLET 1 : COMPARATEUR (Page 2) -->
+            <section id="section-comparateur" class="tab-section active">
+                <h2>Comparer des listes</h2>
+                <div class="controls-row">
+                    <label class="file-label">
+                        Liste du club : <input type="file" id="file-club" accept=".csv,.xlsx,.xls,.tsv">
+                    </label>
+                    <label class="file-label">
+                        Liste 2 (SAGA) : <input type="file" id="file-saga" accept=".csv,.xlsx,.xls,.tsv">
+                    </label>
+                    <button id="btn-comparer" class="action-btn">Comparer</button>
+                </div>
+
+                <div class="results-grid">
+                    <div class="col-nouveaux">
+                        <h3>Nouveaux (<span id="count-nouveaux">0</span>) :</h3>
+                        <div id="list-nouveaux" class="copyable-zone"></div>
+                    </div>
+                    <div class="col-anciens">
+                        <h3>Anciens Club (<span id="count-anciens-club">0</span>) :</h3>
+                        <ul id="list-anciens-club"></ul>
+                    </div>
+                    <div class="col-anciens">
+                        <h3>Anciens SAGA (<span id="count-anciens-saga">0</span>) :</h3>
+                        <ul id="list-anciens-saga"></ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ONGLET 2 : IMPRESSION DE CARTES (Page 3) -->
+            <section id="section-cartes" class="tab-section">
+                <h2>Impression des cartes de membre</h2>
+                <div class="controls-row">
+                    <label class="file-label">
+                        Fichier (Excel, CSV, TSV) : <input type="file" id="file-cartes" accept=".csv,.xlsx,.xls,.tsv">
+                    </label>
+                    <button id="btn-generer-pdf" class="action-btn">Générer l'aperçu PDF</button>
+                </div>
+                <!-- Lecteur PDF intégré -->
+                <iframe id="pdf-preview" title="Aperçu des cartes"></iframe>
+            </section>
+
+            <!-- ONGLET 3 : MÉMO (Page 1) -->
+            <section id="section-memo" class="tab-section">
+                <h2>Mémo / Pratique</h2>
+                <p>Espace réservé aux notes et procédures de gestion.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/comparateur.js"></script>
+    <script src="js/cartes.js"></script>
+</body>
+</html>
